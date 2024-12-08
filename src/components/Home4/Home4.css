@@ -1,0 +1,98 @@
+.home4 {
+    width: 100% ;
+    min-height: 100vh ;
+    display: flex ;
+    align-items: center;
+    justify-content: center ;
+    flex-direction: column;
+    gap: 1.8vw ;
+}
+.home4cards {
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    gap: 2vw ;
+    flex-wrap: wrap;
+
+}
+
+.home4cards .home4card {
+    height: 150px ;
+    width: 150px ;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1vw ;
+    font-size: 18px ;
+    font-weight: 600 ;
+    padding: 2vw ;
+    border: 2px solid rgb(217, 212, 212) ;
+    border-radius: 10px ;
+    &:hover {
+        border: 2px solid #AE14EC;
+        background-color: #FCE6FF;
+    }
+}
+
+.cardDetails {
+    width: 70% ;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    gap: 5vw ;
+    /* flex-wrap: wrap ; */
+}
+
+.cardDetails .left {
+    width: 50% ;
+    /* display: flex ; */
+    /* align-items: center ; */
+    /* justify-content: center ; */
+    /* gap: 2vw ; */
+    flex-direction: column ;
+}
+
+.left .up {
+    width: 100% ;
+    display: flex ;
+    justify-content: center ;
+    gap: 1vw ;
+    flex-direction: column ;
+    font-size: 1.2vw ;
+    border: 1px solid rgb(217, 212, 212);
+    border-radius: 10px ;
+    padding: 3vw ;
+}
+
+.left .up p {
+    position: relative;
+    color: rgb(93, 91, 91);
+    padding-left: 3vw;
+}
+
+.left .up p::before {
+    content: '';
+    position: absolute ;
+    left: 10px;
+    border-radius: 50% ;
+    width: 17px ;
+    height: 17px ;
+    background-color: #29dfff ;
+}
+
+.left .down {
+    align-items: start;
+    flex-direction: column ;
+    border: 1px solid rgb(217, 212, 212);
+    border-radius: 10px ;
+    padding: 3vw ;
+}
+
+.cardDetails .right {
+    width: 50% ;
+}
+.cardDetails .right img{
+    width: 100% ;
+    height: 100% ;
+}

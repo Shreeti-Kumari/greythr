@@ -1,0 +1,44 @@
+.home7cards {
+    padding: 2vw 3.5vw ;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    gap: 2.5vw;
+}
+
+.home7cards .home7card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1vw;
+    padding: 2vw ;
+    border-radius: 10px ;
+}
+
+.home7card a {
+    text-decoration: none ;
+    font-size: 25px ;
+    font-weight: 600;
+    color: #AE14EC;
+}
+
+.home7card:nth-child(1) {
+    background-color: #FFF8E6;
+}
+
+.home7card:nth-child(2) {
+    background-color: #EEFAF4;
+}
+.home7card:nth-child(3) {
+    background-color: #E6FFFF;
+}
+.home7card:nth-child(4) {
+    background-color: #E6FFFF;
+}
+.home7card:nth-child(5) {
+    background-color: #E6FFFF;
+}
+.home7card:nth-child(6) {
+    background-color: #E6FFFF;
+}

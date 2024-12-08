@@ -1,0 +1,162 @@
+.homeCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vw;
+    min-height: calc(100vh - 75px);
+    margin-bottom: 4vh ;
+}
+
+.hire {
+    font-size: 18px;
+    border-radius: 20px;
+    background-color: #FFE3A3;
+    padding: .6vw 1.4vw;
+}
+
+.engage {
+    line-height: 70px;
+}
+
+.engage h1 {
+    font-size: 4vw;
+    font-weight: 700;
+    word-spacing: -8px;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+.engage h1 h1 {
+    color: #8900C4;
+    width: 100%;
+}
+
+.engage p {
+    font-size: 1.4vw;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.homeCards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    flex-wrap: wrap;
+}
+
+.homeCard1,
+.homeCard2,
+.homeCard3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    padding: 1vw;
+    border-radius: 15px;
+    font-size: 20px;
+    background-color: #EEFAF4;
+}
+
+.homeCard2 {
+    background-color: #E6FFFF;
+}
+
+.homeCard3 {
+    background-color: #FFF8E6;
+}
+
+.details .counts {
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.details .countsDetails {
+    margin-left: 10px;
+}
+
+.btns {
+    margin-top: 2.4vw;
+}
+
+.btns button {
+    font-size: 1.2vw;
+    padding: 1vw 2vw;
+    background-color: #310052;
+    border: none;
+    border-radius: 30px;
+    margin-right: 1.5vw;
+    color: white;
+}
+
+.btns .btn2 {
+    background-color: transparent;
+    color: #310052;
+    border: 1px solid #310052;
+    padding: 1vw 2vw;
+
+    &:hover {
+        background-color: #F3A3FF;
+        border: none;
+    }
+}
+
+
+/* ----------------------------------------------- */
+
+@media screen and (max-width: 550px) {
+    .homeCont {
+        justify-content: start;
+        margin-top: 8vh;
+        gap: 6vh;
+    }
+
+    .homeCont .hire {
+        font-size: 25px;
+        font-weight: 700;
+        padding: 1.5vw 2.5vw;
+    }
+
+    .engage h1 {
+        font-size: 5.8vh;
+        line-height: 55px;
+        word-spacing: 0 ;
+    }
+
+    .engage p {
+        font-size: 3.5vh;
+        line-height: 32px;
+        margin-top: 55px;
+    }
+
+    .homeCards {
+        gap: 5vh;
+        flex-direction: column;
+    }
+
+    .homeCard1, .homeCard2, .homeCard3 {
+        gap: 4vh;
+        font-size: 4.5vh;
+    }
+    .homeCards img {
+        height: 8vh ;
+    }
+    .details .counts {
+        font-size: 42px;
+    }
+
+    .homeCont .btns {
+        flex-direction: column;
+        gap: 4vh;
+        margin-top: 0;
+    }
+
+    .btns button {
+        font-size: 3vh;
+        padding: 3vw 6vw;
+        margin-right: 0;
+    }
+}

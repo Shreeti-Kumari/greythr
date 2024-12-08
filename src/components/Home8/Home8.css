@@ -1,0 +1,87 @@
+.home8 {
+    background-color: #AA00EA;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+    display: flex ;
+    /* align-items: center ; */
+    justify-content: center ;
+    gap: 2vw ;
+    padding-top: 5vw ;
+}
+
+.home8circle {
+    background-color: #B921EE;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.home8circle1 {
+    width: 400px;
+    height: 400px;
+    top: -150px;
+    left: -150px;
+    box-shadow: 10px 10px 10px 20px #B921EE;
+}
+
+.home8circle2 {
+    width: 350px;
+    height: 350px;
+    top: -150px;
+    right: -150px;
+}
+
+.home8circle3 {
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    right: 10px;
+    box-shadow: 10px 10px 10px 20px #B921EE;
+}
+
+.home8left {
+    width: 28% ;
+    height: 80% ;
+    background-color: #fff;
+    border-radius: 10px ;
+    padding: 2vw ;
+    z-index: 99 ;
+    margin-left: 8vw ;
+}
+
+.home8right {
+    width: 34% ;
+}
+
+.home8right h2, .home8right p {
+    color: white ;
+    margin-bottom: 20px ;
+}
+
+.home8right h2 {
+    font-size: 2.5vw ;
+    font-weight: 700 ;
+}
+.home8right p {
+    font-size: 1.5vw ;
+}
+
+.home8right .btns .btn {
+    border: 2px solid #310052 ;
+    outline: none ;
+}
+
+.home8right .btn1 {
+    &:hover {
+        background-color: transparent ;
+    }
+}
+
+.home8right .btn2 {
+    background-color: white ;
+    border: 2px solid #310052;
+    &:hover {
+        background-color: white;
+    }
+}

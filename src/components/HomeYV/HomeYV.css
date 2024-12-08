@@ -1,0 +1,33 @@
+.youtubeVideo {
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+}
+
+.youtubeVideo img {
+    position: absolute ;
+    height: 80vh ;
+    width: 80vw ;
+    /* display: none ; */
+}
+
+.youtubeVideo iframe {
+    height: 80vh ;
+    width: 80vw ;
+    border-radius: 20px;
+}
+
+/* ------------------------------------ */
+
+@media screen and (max-width: 550px){
+    .youtubeVideo img {
+        height: 40vh ;
+        width: 90vw ;
+        display: none ;
+    }
+
+    .youtubeVideo iframe {
+        height: 40vh ;
+        width: 90vw ;
+    }
+}

@@ -1,0 +1,140 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.nav {
+    height: 80px ;
+    padding: 1vw 5vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky ;
+    top: 0 ;
+    background-color: white ;
+    z-index: 99;
+}
+
+.nav .navleft,
+.nav .navmid,
+.nav .navright {
+    display: flex;
+    gap: 1.5vw;
+    justify-content: center ;
+    align-items: center;
+}
+.nav .Respmenu {
+    display: none ;
+}
+
+.navmid {
+    gap: .5vw;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.resourceDown {
+    height: 60%;
+    width: 40%;
+    position: absolute;
+    top: 8vw;
+    background-color: #FDFEFF;
+    background-color: oklab(0.97 0 0);
+    right: 25vw;
+    border-radius: 5px;
+    display: none;
+}
+
+.productDown {
+    height: 60%;
+    width: 40%;
+    position: absolute;
+    top: 8vw;
+    background-color: #FDFEFF;
+    background-color: oklab(0.97 0 0);
+    left: 15vw;
+    border-radius: 5px;
+    display: none;
+}
+
+.navleft .logo {
+    height: 55px;
+    margin-right: 2vw;
+}
+
+.navleft .links .link {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    &:hover {
+        color: #AA00EA;
+    }
+}
+
+.links .down img {
+    height: 9px;
+}
+
+.navmid .new {
+    background: #AA00EA;
+    color: white;
+    font-weight: 500;
+    border-radius: 14px;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+.navmid p {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.navright p {
+    font-size: 20px;
+}
+
+.navright button {
+    font-size: 18px;
+    padding: 1vw 2vw;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: #310052;
+    color: white;
+    cursor: pointer;
+}
+
+/* ---------------------------------------- */
+
+@media screen and (max-width: 550px) {
+    .nav .navleft .links,.nav .navmid,.nav .navright{
+        display: none ;
+    }
+    .nav .navleft {
+        display: flex ;
+        align-items: center ;
+        justify-content: space-between ;
+    }
+    .nav .Respmenu {
+        display: block ;
+    }
+    .Respmenu .menu {
+        font-size: 8vw;
+    }
+}
