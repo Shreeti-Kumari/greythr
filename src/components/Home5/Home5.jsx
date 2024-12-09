@@ -8,8 +8,10 @@ const Home5 = () => {
                 <h2>Get full access to the greytHR <span>Ecosystem</span></h2>
                 <p>greytHR users are backed by our strong community, led by industry thought leaders and practitioners</p>
             </div>
-            <div>
+            <div className='home5img'>
                 <img src="https://www.greythr.com/static/1ea929bfc61c488bf4859d9f73a119f7/ae4cb/client-logos.webp" alt="" />
+                <img className='hiddenimg' src="https://www.greythr.com/static/1ea929bfc61c488bf4859d9f73a119f7/ae4cb/client-logos.webp" alt="" />
+                <img className='hiddenimg' src="https://www.greythr.com/static/1ea929bfc61c488bf4859d9f73a119f7/ae4cb/client-logos.webp" alt="" />
             </div>
         </div>
     )

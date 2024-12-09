@@ -3,8 +3,15 @@ import logo from '../../assets/logo.svg';
 import './Navbar.css'
 import { Link } from 'react-router-dom'
 import { RiMenu3Line } from "react-icons/ri";
+import { IoIosArrowDown } from "react-icons/io";
 
 const Navbar = () => {
+
+    const handlemenu = () => {
+        console.log("hello")
+        document.querySelector(".Respmenu .menuCont").style.transform = "translate(0%)"
+    }
+    
     return (
         <div className="nav">
             <div className="navleft">
@@ -27,7 +34,15 @@ const Navbar = () => {
                 <Link to="/Login"><button>Login</button></Link>
             </div>
             <div className="Respmenu">
-                <RiMenu3Line className='menu'/>
+                <RiMenu3Line className='menu' onClick={handlemenu}/>
+                <div className="menuCont">
+                    <h4>Product<IoIosArrowDown className='downlist' /></h4>
+                    <h4>Customers<IoIosArrowDown className='downlist' /></h4>
+                    <h4>Pricing<IoIosArrowDown className='downlist' /></h4>
+                    <h4>Recourses<IoIosArrowDown className='downlist' /></h4>
+                    <img src="https://www.datocms-assets.com/40521/1707759317-hr-automation-for-growth-213x168.png?auto=format&fit=max&w=213" alt="" />
+                    <p>Get a demo</p>
+                </div>
             </div>
         </div>
     )

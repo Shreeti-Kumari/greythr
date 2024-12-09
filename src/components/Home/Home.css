@@ -3,9 +3,9 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 2vw;
+    gap: 1vw;
     min-height: calc(100vh - 75px);
-    margin-bottom: 4vh ;
+    /* margin-bottom: 3vh ; */
 }
 
 .hire {

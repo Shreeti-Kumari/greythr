@@ -26,6 +26,12 @@ const Home6 = () => {
                 <img src="https://www.greythr.com/static/cdcd2276e0df7e264c3c8b5065e19d40/5687c/badge2.webp" alt="" />
                 <img src="https://www.greythr.com/static/d6a20afd19c812836b00258d1f94feff/5687c/badge1.webp" alt="" />
                 <img src="https://www.greythr.com/static/cdcd2276e0df7e264c3c8b5065e19d40/5687c/badge2.webp" alt="" />
+                <img className='hiddenimg' src="https://www.greythr.com/static/d6a20afd19c812836b00258d1f94feff/5687c/badge1.webp" alt="" />
+                <img className='hiddenimg' src="https://www.greythr.com/static/cdcd2276e0df7e264c3c8b5065e19d40/5687c/badge2.webp" alt="" />
+                <img className='hiddenimg' src="https://www.greythr.com/static/d6a20afd19c812836b00258d1f94feff/5687c/badge1.webp" alt="" />
+                <img className='hiddenimg' src="https://www.greythr.com/static/cdcd2276e0df7e264c3c8b5065e19d40/5687c/badge2.webp" alt="" />
+                <img className='hiddenimg' src="https://www.greythr.com/static/d6a20afd19c812836b00258d1f94feff/5687c/badge1.webp" alt="" />
+                <img className='hiddenimg' src="https://www.greythr.com/static/cdcd2276e0df7e264c3c8b5065e19d40/5687c/badge2.webp" alt="" />
             </div>
         </div>
     )

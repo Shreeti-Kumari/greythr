@@ -21,10 +21,8 @@
 .cards {
     display: grid ;
     grid-template-columns: 450px 500px ;
-    /* grid-template-rows: 300px 300px; */
-    gap: 5vw ;
+    gap: 2vw ;
     justify-content: center ;
-    /* align-items: center; */
 }
 
 .card {
@@ -72,7 +70,7 @@
     display: flex ;
     align-items: center ;
     justify-content: center ;
-    gap: 3.4vw;
+    gap: 2vw;
     margin-top: 5vw ;
 }
 .card:nth-child(1) {
@@ -101,3 +99,33 @@
     background-color: #FF9100;
 }
 
+/* -------------------------------------------------- */
+
+@media screen and (max-width: 550px) {
+    .home3 {
+        padding: 6vh 2vh;
+    }
+    .topPart h2 {
+        font-size: 4vh;
+    }
+    .cards {
+        display: block ;
+        gap: 4vh ;
+    }
+    .card {
+        margin: 5vh 0;
+    }
+    .card .headline {
+        font-size: 2.5vh;
+        margin-bottom: 2vh;
+    }
+    .card .para {
+        font-size: 2.2vh ;
+    }
+    .card2 {
+        width: 100% ;
+    }
+    .home3 .btns {
+        flex-direction: column;
+    }
+}

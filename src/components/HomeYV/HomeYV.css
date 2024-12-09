@@ -20,6 +20,9 @@
 /* ------------------------------------ */
 
 @media screen and (max-width: 550px){
+    .youtubeVideo {
+        margin: 4vh 0;
+    }
     .youtubeVideo img {
         height: 40vh ;
         width: 90vw ;

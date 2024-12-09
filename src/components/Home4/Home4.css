@@ -17,14 +17,14 @@
 }
 
 .home4cards .home4card {
-    height: 150px ;
-    width: 150px ;
+    height: 160px ;
+    width: 160px ;
     display: flex ;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 1vw ;
-    font-size: 18px ;
+    gap: 1.5vw ;
+    font-size: 20px ;
     font-weight: 600 ;
     padding: 2vw ;
     border: 2px solid rgb(217, 212, 212) ;
@@ -95,4 +95,54 @@
 .cardDetails .right img{
     width: 100% ;
     height: 100% ;
+}
+
+
+/* ------------------------------------------------- */
+
+@media screen and (max-width: 550px) {
+    .home4 {
+        padding: 1.8vh ;
+        gap: 4vh;
+    }
+    .home4 .topPart p {
+        font-size: 3vh;
+        text-align: center;
+    }
+
+    .cardDetails {
+        width: 100% ;
+        gap: 4vh;
+        flex-direction: column;
+    }
+
+    .cardDetails .left {
+        width: 100% ;
+    }
+    .cardDetails .right {
+        width: 100% ;
+    }
+
+    .left .up {
+        gap: 2vh;
+        font-size: 3vh;
+        padding: 2vh;
+        margin-bottom: 4vh;
+    }
+    .left .up p {
+        padding-left: 5vh;
+    }
+    .left .up p::before {
+        top: 6px;
+    }
+    .down {
+        margin-bottom: 2.5vh ;
+    }
+    .down h2 {
+        font-size: 5vh;
+        margin-bottom: 2vh;
+    }
+    .down p {
+        font-size: 2.5vh ;
+    }
 }

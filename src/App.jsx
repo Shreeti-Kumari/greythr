@@ -21,12 +21,12 @@ const App = () => {
       <Home></Home>
       <HomeYV></HomeYV>
       <Home3></Home3>
-      {/* <Home4></Home4> */}
-      {/* <Home5></Home5> */}
-      {/* <Home6></Home6> */}
-      {/* <Home7></Home7> */}
-      {/* <Home8></Home8> */}
-      {/* <Footer></Footer> */}
+      <Home4></Home4>
+      <Home5></Home5>
+      <Home6></Home6>
+      <Home7></Home7>
+      <Home8></Home8>
+      <Footer></Footer>
 
       </BrowserRouter>
   )

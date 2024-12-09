@@ -42,3 +42,32 @@
 .home7card:nth-child(6) {
     background-color: #E6FFFF;
 }
+
+/* --------------------------------------------- */
+
+@media screen and (max-width: 550px) {
+    .home7cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4vh;
+        display: flex;
+        margin: 6vh 0vh;
+    }
+
+    .home7cards .home7card {
+        gap: 2.5vh;
+        padding: 2vh;
+        width: 100%;
+    }
+    .home7card h2 {
+        font-size: 4vh;
+        text-align: center;
+    }
+    .home7card p {
+        font-size: 3vh;
+        text-align: center;
+    }
+
+    .home7card a {
+        font-size: 37px;
+    }
+}

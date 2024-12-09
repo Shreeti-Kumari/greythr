@@ -7,3 +7,40 @@
     flex-direction: column;
     padding: 5vw 0 0 0;
 }
+
+.hiddenimg {
+    display: none ;
+}
+
+/* ------------------------------------ */
+@media screen and (max-width: 550px) {
+    .home5 {
+        gap: 3vh ;
+        padding: 3vh ;
+    }
+    .topPart p {
+        font-size: 3vh ;
+        margin-top: 2.5vh ;
+    }
+    .home5img {
+        display: flex ;
+    }
+    .hiddenimg {
+        display: block ;
+    }
+    .home5img img {
+        animation: scroll ;
+        animation-duration: 5s ;
+        animation-timing-function: linear ;
+        animation-iteration-count: infinite ;
+    }
+
+    @keyframes scroll {
+        from {
+            transform: translate(0%);
+        }
+        to {
+            transform: translate(-100%);
+        }
+      }
+}

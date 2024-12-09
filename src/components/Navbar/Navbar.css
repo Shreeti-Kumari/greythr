@@ -25,9 +25,6 @@ body {
     justify-content: center ;
     align-items: center;
 }
-.nav .Respmenu {
-    display: none ;
-}
 
 .navmid {
     gap: .5vw;
@@ -120,6 +117,10 @@ body {
     cursor: pointer;
 }
 
+.nav .Respmenu {
+    display: none ;
+}
+
 /* ---------------------------------------- */
 
 @media screen and (max-width: 550px) {
@@ -133,8 +134,39 @@ body {
     }
     .nav .Respmenu {
         display: block ;
+        /* position: relative; */
     }
-    .Respmenu .menu {
+    .nav .Respmenu .menu {
         font-size: 8vw;
+    }
+    .nav .Respmenu .menuCont {
+        height: 90vh ;
+        width: 100vw ;
+        position: absolute ;
+        top:15vh ;
+        /* left: -40vh; */
+        left: 0;
+        background-color: #f9e9ff;
+        padding: 3vh ;
+        transform: translate(100%);
+        transition: all .5s ease;
+    } 
+    .nav .Respmenu .menuCont h4{
+        margin-bottom: 7vh ;
+        font-weight: 500;
+        font-size: 3vh ;
+        display: flex ;
+        align-items: center;
+        justify-content: space-between ;
+    }
+    .menuCont img {
+        width: 100% ;
+        border-radius: 10px ;
+        margin-bottom: 10px ;
+    }
+    .menuCont p {
+        font-size: 4vh ;
+        text-align: center ;
+        color: #AA00EA;
     }
 }

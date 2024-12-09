@@ -54,7 +54,7 @@ const Home3 = () => {
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-tablet"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"></rect><line x1="12" x2="12.01" y1="18" y2="18"></line></svg>
                 </div>
                 <h2 className='headline'>Your employees need a self-serving portal (ESS), ON MOBILE!</h2>
-                <p>Use greytHR’s ‘mobile-first’ Employee Self Service Portal (ESS) enables common HR tasks for employees and managers. Access payslips, manage leaves, add expense claims and so much more. All on mobile</p>
+                <p className='para'>Use greytHR’s ‘mobile-first’ Employee Self Service Portal (ESS) enables common HR tasks for employees and managers. Access payslips, manage leaves, add expense claims and so much more. All on mobile</p>
             </div>
             <div className="btns">
                 <button>Explore HRMS</button>
