@@ -96,7 +96,7 @@
     background-color: transparent;
     color: #310052;
     border: 1px solid #310052;
-    padding: 1vw 2vw;
+    padding: 1vw 3vw;
 
     &:hover {
         background-color: #F3A3FF;
@@ -158,5 +158,8 @@
         font-size: 3vh;
         padding: 3vw 6vw;
         margin-right: 0;
+    }
+    .btns .btn2 {
+        padding: 1.2vh 4vh ;
     }
 }

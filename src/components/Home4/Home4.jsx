@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Home4.css'
 
 const Home4 = () => {
@@ -24,6 +24,43 @@ const Home4 = () => {
             role: 'Employees'
         }
     ]
+
+    const para = [
+        {
+            p1: 'Data security concerns and system compatibility issues.',
+            p2: 'Low user adoption rates.',
+            p3: 'No guided implementation.',
+        },
+        {
+            p1: 'People ops is still managed on Sheets!',
+            p2: 'Tons of (error-prone) manual data entry work',
+            p3: 'Unengaged, unmotivated workforce',
+            p4: 'Time-consuming administrative tasks',
+        },
+        {
+            p1: 'Payroll is still managed on Sheets!',
+            p2: 'Complexity of regulations',
+            p3: 'Data accuracy issues with hours of manual tasks',
+        },
+        {
+            p1: 'Time-consuming approvals.',
+            p2: 'Challenges in performance monitoring.',
+            p3: 'Administrative overload',
+        },
+        {
+            p1: 'Complex workflows to complete basic tasks like mark leave and attendance',
+            p2: 'Over dependence on HR to access and maintain own records, documents',
+            p3: 'Unaware of policy changes and unengaged with rest of workforce',
+        }
+    ]
+
+    // const [value, setvalue] = useState(1)
+
+    const handleCardInfo = () => {
+        console.log("hello")
+
+    }
+
     return (
         <div className='home4'>
             <div className='topPart'>
@@ -33,7 +70,7 @@ const Home4 = () => {
             <div className="home4cards">
                 {users.map((item, idx) => {
                     return (
-                        <div key={idx} className="home4card">
+                        <div onClick={handleCardInfo} key={idx} className="home4card">
                             <img src={item.img} />
                             <p>{item.role}</p>
                         </div>

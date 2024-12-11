@@ -1,5 +1,6 @@
 import React from 'react'
 import './Home7.css'
+import { NavLink } from 'react-router-dom'
 
 const Home7 = () => {
 
@@ -51,7 +52,7 @@ const Home7 = () => {
                                 </div>
                                 <h2>{item.heading}</h2>
                                 <p>{item.para}</p>
-                                <a href="#">Know more</a>
+                                <NavLink to="/Knowmore">Know more</NavLink>
                             </div>
                         )
                     })

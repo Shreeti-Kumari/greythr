@@ -13,7 +13,7 @@ body {
     align-items: center;
     position: sticky ;
     top: 0 ;
-    background-color: white ;
+    background-color: #f9eaff;
     z-index: 99;
 }
 
@@ -95,6 +95,26 @@ body {
     border-radius: 14px;
     padding: 4px 10px;
     cursor: pointer;
+    overflow: hidden ;
+}
+
+.navmid .new p {
+    /* transform: translate(100% ); */
+    animation-name: anime ;
+    animation-duration: .9s ;
+    animation-timing-function: linear ;
+    animation-iteration-count: infinite ;
+}
+
+@keyframes anime {
+    to{
+        transform: translate(0);
+        opacity: 0;
+    }
+    from {
+        transform: translate(100% );
+        opacity: 1;
+    }
 }
 
 .navmid p {
@@ -115,6 +135,12 @@ body {
     background-color: #310052;
     color: white;
     cursor: pointer;
+}
+
+button:active {
+    scale: .98;
+    background-color: #480971;
+    transition: all ease-in;
 }
 
 .nav .Respmenu {
@@ -144,7 +170,6 @@ body {
         width: 100vw ;
         position: absolute ;
         top:15vh ;
-        /* left: -40vh; */
         left: 0;
         background-color: #f9e9ff;
         padding: 3vh ;
@@ -158,6 +183,10 @@ body {
         display: flex ;
         align-items: center;
         justify-content: space-between ;
+    }
+    .nav .Respmenu .menuCont a {
+        text-decoration: none ;
+        color: black;
     }
     .menuCont img {
         width: 100% ;

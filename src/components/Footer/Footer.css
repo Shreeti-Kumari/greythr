@@ -15,14 +15,17 @@
     display: flex;
     gap: 23px;
     flex-direction: column;
+    margin-top: 2vw;
 }
 
-.list h4 {
+.li h4 {
     font-size: 22px;
 }
-.list h4 .downlist {
-    display: none ;
+
+.li h4 .downlist {
+    display: none;
 }
+
 .list a {
     text-decoration: none;
     color: rgb(152, 147, 147);
@@ -66,17 +69,20 @@
     gap: 1vw;
     font-size: 20px;
 }
+
 .icons {
-    width: 100% ;
-    display: flex ;
-    justify-content: center ;
-    align-items: center ;
-    gap: 2vh ;
-    margin-top: 4vw ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    margin-top: 4vw;
 }
+
 .icons img {
-    width: 45px ;
+    width: 45px;
 }
+
 /* ------------------------------------------------------ */
 
 @media screen and (max-width: 550px) {
@@ -97,32 +103,50 @@
         padding-bottom: 2vh;
     }
 
-    .list h4 {
+    /* 
+    .listshow {
+        display: flex;
+        gap: 23px;
+        flex-direction: column;
+        margin-top: 2vw;
+        border-bottom: 1px solid #d7d4d4;
+        width: 100%;
+        padding-bottom: 2vh;
+    } */
+
+    .listshow a {
+        font-size: 2.5vh;
+        text-decoration: none;
+        color: rgb(152, 147, 147);
+        font-size: 16px;
+    }
+
+    .li h4 {
         display: flex;
         align-items: center;
         gap: .5vh;
         font-size: 3vh;
         font-weight: 500;
-
     }
 
-    .list h4 .downlist {
-        display: block ;
+    .li h4 .downlist {
+        display: block;
         position: absolute;
         right: 20px;
     }
 
-    .list a,.list img {
+    .list a,
+    .list img {
         font-size: 2.5vh;
-        display: none;
     }
+
     .footerleft {
         padding: 0vw 5vw;
         justify-content: center;
         flex-wrap: wrap;
         gap: 4vh;
     }
-    
+
     .footerAd {
         flex-direction: column;
         gap: 5vh;
@@ -130,8 +154,13 @@
     }
 
     .footerright p {
-        font-size: 3vh ;
+        font-size: 3vh;
     }
-    
+
+    .footerAd .footerlogo {
+        height: 55px;
+    }
+
+
 
 }

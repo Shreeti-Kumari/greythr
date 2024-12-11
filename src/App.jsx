@@ -1,34 +1,80 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+// import { Outlet } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
-import Home from './components/Home/Home'
-import HomeYV from './components/HomeYV/HomeYV'
-import Home3 from './components/Home3/Home3'
-import Home4 from './components/Home4/Home4'
-import Home5 from './components/Home5/Home5'
-import Home6 from './components/Home6/Home6'
-import Home7 from './components/Home7/Home7'
-import Home8 from './components/Home8/Home8'
-import Footer from './components/Footer/Footer'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import Product from './pages/Product/Product.jsx'
+import Resources from './pages/Resources/Resources.jsx'
+import Pricing from './pages/Pricing/Pricing.jsx'
+import Customers from './pages/Customers/Customers'
+import Login from './pages/Login/Login'
+import HomePage from './pages/HomePage/HomePage.jsx'
+import Knowmore from './pages/Knowmore/Knowmore.jsx'
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element:
+      <div>
+        <HomePage />
+      </div>,
+  },
+  {
+    path: "/Product",
+    element:
+      <div>
+        <Navbar />
+        <Product />
+      </div>,
+  },
+  {
+    path: "/Customers",
+    element:
+      <div>
+        <Navbar />
+        <Customers />
+      </div>,
+  },
+  {
+    path: "/Pricing",
+    element:
+      <div>
+        <Navbar />
+        <Pricing />
+      </div>,
+  },
+  {
+    path: "/Resources",
+    element:
+      <div>
+        <Navbar />
+        <Resources />
+      </div>,
+  },
+  {
+    path: "/Login",
+    element:
+      <div>
+        <Navbar />
+        <Login />
+      </div>,
+  },
+  {
+    path: "/Knowmore",
+    element:
+      <div>
+        <Navbar />
+        <Knowmore />
+      </div>,
+  },
+
+]);
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Navbar></Navbar>
-      <Routes>
-        {/* <Route path='/' element={<Home />}></Route> */}
-      </Routes>
-      <Home></Home>
-      <HomeYV></HomeYV>
-      <Home3></Home3>
-      <Home4></Home4>
-      <Home5></Home5>
-      <Home6></Home6>
-      <Home7></Home7>
-      <Home8></Home8>
-      <Footer></Footer>
+    <div>
+      <RouterProvider router={router} />
+    </div>
 
-      </BrowserRouter>
   )
 }
 

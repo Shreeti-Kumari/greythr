@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Footer.css'
 import logo from '../../assets/logo.svg';
 import { FaWhatsapp } from "react-icons/fa";
@@ -22,72 +22,79 @@ const Footer = () => {
             img: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAoCAYAAABjPNNTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJHSURBVHgB1ZmPVcIwEMavPAfICHECGSFuUCegTmA3UDfQCcAJxAmKG8AErRPQDc47kvLqP3K0V6i/9z5qJamfl8slhAQ6ggCGLinpiuTA39tWkypoTdqQVom/Hx4y50gFCTuI+2UwFMFc2dHcd5WqZulhtkfkYprj1xTpZHCqGL1DUZ1CF6jjjLQd2GBbs2MNpic015aTGrQnjmBbW1GO4vA5KMlR0/Y0+WbwHvrOtv5YUv7rO2GYcST6MuztSN7DeODh3kcz4ZfguoRxUZMuyWB9EX7hRN0cNZvNqPRS7TUht/lqzB9/pvZiqsr//PICsFyCAH5oRnra3aFk2UtTVMM5aW4We8uiDq+vqMZ8Lp5A7G+C0nXTWlCD00aGYX88u62suTn8/u2tzzt9pjzUuSj0MZp2eY5YlvL2ceUcSQOaPNFkvL72s1gHM4Eh4FKz3YIWXCdr0OTuDuDhIZ7DcmrOyUyUG7E849onyUWG28lzMuVIrmX/TyTgRQHy2Bw1eNUk8SbjvTYbUOPjQ9yU/TUTJx7NxQLUkK3dzIpfmg3GG8Q2GStqf3PjNxg8KZoV6NBK1N5g8HW99qWJnyVjV8earRpPxRK0a2Z/eKtW7YY78TmpVn2VWPw4O8Lzfkr8Tbbxtl9xgutnGAePf57Aod8alWeOYAkx8D8cDgSj7kwmUzgGlK7pehHMoAs49qO/llHO0cVABgtxDgrNZqh7HO1gKILZokfkHBxJAh0Jw+TA5xN/TWLh51ckvNy+g99lLZOOnwI+AXQ9AXiUOSA/AAAAAElFTkSuQmCC'
         }
     ]
+
+
+    const footerlinks = [
+        {
+            category: "Product",
+            links: ["HR Software", "Payroll Software", "Leave Management", "Attendance Management", "Performance Management", "Employee Self Service", "Employee Engagement", "Unite Marketplace", "Recruitment Software", "greytHR Service Status"]
+        },
+        {
+            category: "HR & Payroll Administration",
+            links: ["What is HRMS?", "What is Payroll?", "What is Statutory Compliance?", "Guide to Leave Management", "Guide to Attendance Management", "Holiday Lists 2023", "Holiday Lists 2024", "Holiday Lists 2025", "Gender Inclusivity Report 2024"]
+        },
+        {
+            category: "Resources",
+            links: ["Blogs", "Guides", "Templates", "Webinars", "Podcasts", "Academy", "Community Forums", "Statutory Wiki", "Case Studies", "HR Garden"]
+        },
+        {
+            category: "greytHR Customers",
+            links: ["greytHR Help", "Login", "Videos"]
+        },
+        {
+            category: "Company",
+            links: ["About", "Customers", "Payroll Service Providers", "Partners", "Plans & Pricing", "Newsroom", "Careers", "Contact us"]
+        },
+        {
+            category: "Competitors",
+            links: ["greytHR vs Keka"]
+        }
+    ]
+
+    // const [btnstate, setbtnstate] = useState(false);
+
+    // const handleFoot = () => {
+    //     var list = document.querySelectorAll(".li .list");
+    //     var lists = Array.from(list)
+    //     if (btnstate) {
+    //         lists.forEach(e => {
+    //             console.log(e)
+    //             e.style.display = "flex"
+    //         });
+    //         setbtnstate(false)
+    //     }
+    //     else {
+    //         lists.forEach(e => {
+    //             e.style.display = "none"
+    //         });
+    //         setbtnstate(true)
+    //     }
+    // }
+
     return (
         <div className='footer'>
             <div className='lists'>
-                <div className="list">
-                    <h4>Product <IoIosArrowDown className='downlist' /></h4>
-                    <a href="#">HR Software</a>
-                    <a href="">Payroll Software</a>
-                    <a href="">Leave Management</a>
-                    <a href="#">Attendance Management</a>
-                    <a href="">Performance Management</a>
-                    <a href="">Employee Self Service</a>
-                    <a href="">Employee Engagement</a>
-                    <a href="">Unite Marketplace</a>
-                    <a href="">Recruitment Software</a>
-                    <a href="">greytHR Service Status</a>
-                </div>
-                <div className="list">
-                    <h4>HR & Payroll Administration <IoIosArrowDown className='downlist' /></h4>
-                    <a href="#">What is HRMS?</a>
-                    <a href="">What is Payroll?</a>
-                    <a href="">What is Statutory Compliance?</a>
-                    <a href="#">Guide to Leave Management</a>
-                    <a href="">Guide to Attendance Management</a>
-                    <a href="">Holiday Lists 2023</a>
-                    <a href="">Holiday Lists 2024</a>
-                    <a href="">Holiday Lists 2025</a>
-                    <a href="">Gender Inclusivity Report 2024</a>
-                </div>
-                <div className="list">
-                    <h4>Resources <IoIosArrowDown className='downlist' /></h4>
-                    <a href="#">Blogs</a>
-                    <a href="">Guides</a>
-                    <a href="">Templates</a>
-                    <a href="#">Webinars</a>
-                    <a href="">Podcasts</a>
-                    <a href="">Academy</a>
-                    <a href="">Community Forums</a>
-                    <a href="">Statutory Wiki</a>
-                    <a href="">Case Studies</a>
-                    <a href="">HR Garden</a>
-                </div>
-                <div className="list">
-                    <h4>greytHR Customers<IoIosArrowDown className='downlist' /></h4>
-                    <a href="#">greytHR Help</a>
-                    <a href="">Login</a>
-                    <a href="">Videos</a>
-                    <img src="https://www.greythr.com/static/e1eac8a442862a5bf475771bfcd1bc10/0a0f0/play-store.webp" alt="" />
-                    <img src="https://www.greythr.com/static/2e4d2edcf2b2c624db7f03bc05fa1bed/305ba/app-store.webp" alt="" />
-                </div>
-                <div className="list">
-                    <h4>Company <IoIosArrowDown className='downlist' /></h4>
-                    <a href="#">About</a>
-                    <a href="">Customers</a>
-                    <a href="">Payroll Service Providers</a>
-                    <a href="#">Partners</a>
-                    <a href="">Plans & Pricing</a>
-                    <a href="">Newsroom</a>
-                    <a href="">Unite Marketplace</a>
-                    <a href="">Careers</a>
-                    <a href="">Contact us</a>
-                </div>
-                <div className="list">
-                    <h4>Competitors <IoIosArrowDown className='downlist' /></h4>
-                    <a href="#">greytHR vs Keka</a>
-                </div>
+                {footerlinks.map((item, index) => (
+                    <div className='li' key={index}>
+                        <h4>
+                            {item.category}
+                            < IoIosArrowDown className='downlist' />
+                        </h4>
+                        <div className='list'>
+
+                            {
+                                item.links.map((link, i) => (
+                                    <a key={i}>
+                                        {link}
+                                    </a>
+                                ))
+                            }
+                        </div>
+
+                    </div>
+                ))}
             </div>
+
             <div className='footerAd'>
                 <div className='footerleft'>
                     <img className='footerlogo' src={logo} alt="" />
@@ -96,19 +103,18 @@ const Footer = () => {
                     <img src="https://www.greythr.com/static/d2acb93764624188e7d67021e39d9809/887ba/iso.webp" alt="" />
                 </div>
                 <div className="footerright">
-                    {/* <FaWhatsapp className='whatsapp'/> */}
                     <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDEiIHZpZXdCb3g9IjAgMCA0MCA0MSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0zNC4xNzE4IDUuODQwNjFDMzAuNDEyMSAyLjA3NjExIDI1LjQxMTggMC4wMDE5MDk5NCAyMC4wODQgMEM5LjEwNTY3IDAgMC4xNzA5NCA4LjkzMzc4IDAuMTY3MTIgMTkuOTE1QzAuMTY1MjEgMjMuNDI1NCAxLjA4Mjk0IDI2Ljg1MTkgMi44MjU3NyAyOS44NzE2TDAgNDAuMTkyOUwxMC41NTgyIDM3LjQyMzRDMTMuNDY3IDM5LjAxMDcgMTYuNzQyNiAzOS44NDYyIDIwLjA3NTQgMzkuODQ3MkgyMC4wODRDMzEuMDYwNCAzOS44NDcyIDM5Ljk5NjIgMzAuOTEyNCA0MCAxOS45MzEyQzQwLjAwMTkgMTQuNjA5MiAzNy45MzI0IDkuNjA2MDggMzQuMTcxOCA1Ljg0MTU3VjUuODQwNjFaTTIwLjA4NCAzNi40ODM4SDIwLjA3NzNDMTcuMTA3MyAzNi40ODI5IDE0LjE5MzggMzUuNjg0NCAxMS42NTE3IDM0LjE3NjZMMTEuMDQ3MSAzMy44MTc2TDQuNzgxNTYgMzUuNDYxTDYuNDUzNzEgMjkuMzUyTDYuMDYwMjYgMjguNzI1NkM0LjQwMzM4IDI2LjA4OTkgMy41Mjc2NyAyMy4wNDM0IDMuNTI5NTggMTkuOTE2QzMuNTMzNCAxMC43ODkzIDEwLjk1OTMgMy4zNjM0MSAyMC4wOTA4IDMuMzYzNDFDMjQuNTEyMiAzLjM2NTMyIDI4LjY2ODMgNS4wODkwNiAzMS43OTM5IDguMjE4NUMzNC45MTk2IDExLjM0NyAzNi42Mzk0IDE1LjUwNjkgMzYuNjM3NiAxOS45MjkzQzM2LjYzMzcgMjkuMDU3IDI5LjIwNzkgMzYuNDgyOSAyMC4wODQgMzYuNDgyOVYzNi40ODM4Wk0yOS4xNjM5IDI0LjA4NjNDMjguNjY2MyAyMy44MzcxIDI2LjIxOTggMjIuNjMzOCAyNS43NjMyIDIyLjQ2NzdDMjUuMzA2OCAyMi4zMDE0IDI0Ljk3NTQgMjIuMjE4NCAyNC42NDQgMjIuNzE2OUMyNC4zMTI3IDIzLjIxNTQgMjMuMzU4NyAyNC4zMzY2IDIzLjA2ODMgMjQuNjY3OUMyMi43NzggMjUuMDAwMiAyMi40ODc3IDI1LjA0MTMgMjEuOTkwMSAyNC43OTJDMjEuNDkyNyAyNC41NDI4IDE5Ljg4OTIgMjQuMDE3NiAxNy45ODc5IDIyLjMyMjRDMTYuNTA4NyAyMS4wMDI3IDE1LjUwOTcgMTkuMzczNiAxNS4yMTk0IDE4Ljg3NUMxNC45MjkxIDE4LjM3NjYgMTUuMTg4OSAxOC4xMDcyIDE1LjQzNzEgMTcuODU5OUMxNS42NjA2IDE3LjYzNjQgMTUuOTM0NyAxNy4yNzgzIDE2LjE4MzkgMTYuOTg4QzE2LjQzMzIgMTYuNjk3NyAxNi41MTUzIDE2LjQ4OTYgMTYuNjgxNCAxNi4xNTgxQzE2Ljg0NzcgMTUuODI1OCAxNi43NjQ2IDE1LjUzNTYgMTYuNjQwNCAxNS4yODYyQzE2LjUxNjIgMTUuMDM3IDE1LjUyMTIgMTIuNTg3NCAxNS4xMDU4IDExLjU5MTRDMTQuNzAxOCAxMC42MjEyIDE0LjI5MTIgMTAuNzUzIDEzLjk4NjYgMTAuNzM2OEMxMy42OTYyIDEwLjcyMjQgMTMuMzY0OSAxMC43MTk2IDEzLjAzMjYgMTAuNzE5NkMxMi43MDAyIDEwLjcxOTYgMTIuMTYxNiAxMC44NDM3IDExLjcwNTEgMTEuMzQyMkMxMS4yNDg3IDExLjg0MDcgOS45NjMyMyAxMy4wNDQ5IDkuOTYzMjMgMTUuNDkzNEM5Ljk2MzIzIDE3Ljk0MiAxMS43NDYyIDIwLjMwOTQgMTEuOTk1NCAyMC42NDE4QzEyLjI0NDcgMjAuOTc0MSAxNS41MDQ5IDI2LjAwMDEgMjAuNDk2NiAyOC4xNTY0QzIxLjY4MzcgMjguNjY5MiAyMi42MTA5IDI4Ljk3NTggMjMuMzMzOCAyOS4yMDVDMjQuNTI1NyAyOS41ODQxIDI1LjYxMDQgMjkuNTMwNyAyNi40NjggMjkuNDAyN0MyNy40MjQgMjkuMjU5NCAyOS40MTIyIDI4LjE5ODQgMjkuODI2NyAyNy4wMzYyQzMwLjI0MTEgMjUuODc0IDMwLjI0MTEgMjQuODc3IDMwLjExNyAyNC42Njk4QzI5Ljk5MjkgMjQuNDYyNiAyOS42NjA2IDI0LjMzNzQgMjkuMTYzIDI0LjA4ODJMMjkuMTYzOSAyNC4wODYzWiIgZmlsbD0iIzI1RDM2NiIvPgo8L3N2Zz4K" alt="" />
                     <p>Message us on WhatsApp</p>
                 </div>
             </div>
             <div className="icons">
-                {[images.map((item,idx) => {
-                    return  (
+                {[images.map((item, idx) => {
+                    return (
                         <img key={idx} src={item.img} />
                     )
                 })]}
             </div>
-        </div>
+        </div >
     )
 }
 

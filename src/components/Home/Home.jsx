@@ -1,12 +1,28 @@
 import React from 'react'
+import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
 import './Home.css'
 
 const Home = () => {
+
+    useGSAP(() => {
+        gsap.from(".engage h1, .engage p", {
+            transform: 'scale(.8)',
+            opacity: 0,
+            duration: 1,
+        })
+        gsap.from(".homeCards", {
+            x:50 ,
+            duration: 1,
+            opacity: 0 ,
+        })
+    })
+
     return (
         <div className='homeCont'>
             <div className='hire'>HIRE - TO - RETIER</div>
             <div className='engage'>
-                <h1>Engage, appraise and delight <h1> every employee!</h1></h1>
+                <h1>Engage, appraise and delight <span><h1> every employee!</h1></span></h1>
                 <p>The most trusted full-suite HRMS for your people operations</p>
             </div>
             <div className='homeCards'>
